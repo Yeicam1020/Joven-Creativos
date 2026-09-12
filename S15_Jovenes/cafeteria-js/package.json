@@ -1,0 +1,9 @@
+{
+  "name": "cafeteria-js",
+  "version": "1.0.0",
+  "description": "Proyecto de cafetería con JavaScript y Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

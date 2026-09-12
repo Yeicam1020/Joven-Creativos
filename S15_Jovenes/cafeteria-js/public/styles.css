@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f1ed;
+    color: #3e2723;
+}
+
+.encabezado {
+    background: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.encabezado p {
+    margin-bottom: 0;
+}
+
+.navegacion {
+    background: #3e2723;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    color: #ffd180;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.bienvenida {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.bienvenida h2 {
+    color: #6f4e37;
+}
+
+.productos h2,
+.calculadora h2 {
+    text-align: center;
+    color: #6f4e37;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.producto {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto h3 {
+    color: #6f4e37;
+}
+
+.producto strong {
+    color: #8d6e63;
+    font-size: 20px;
+}
+
+.calculadora {
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 14px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #563728;
+}
+
+.resultado {
+    margin-top: 20px;
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #6f4e37;
+}
+
+.resultado h3 {
+    margin-top: 0;
+}
+
+.resultado p {
+    text-align: left;
+}
+
+.resultado span {
+    float: right;
+    font-weight: bold;
+}
+
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encabezado h1 {
+        font-size: 28px;
+    }
+}

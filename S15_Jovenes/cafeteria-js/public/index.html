@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Aroma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <h1>☕ Cafetería Aroma</h1>
+    <p>El mejor café para acompañar tus momentos</p>
+</header>
+
+<nav class="navegacion">
+    <a href="/">Inicio</a>
+    <a href="/productos">Nuestros productos</a>
+    <a href="/api/productos">API de productos</a>
+</nav>
+
+<main class="contenedor">
+
+    <section class="bienvenida">
+        <h2>Bienvenido a Cafetería Aroma</h2>
+        <p>
+            Disfruta nuestros productos y calcula el total
+            de tu compra.
+        </p>
+    </section>
+
+    <section class="productos">
+        <h2>☕ Productos destacados</h2>
+
+        <div class="tarjetas">
+
+            <div class="producto">
+                <h3>Café Americano</h3>
+                <p>Café preparado con granos seleccionados.</p>
+                <strong>$5.000</strong>
+            </div>
+
+            <div class="producto">
+                <h3>Capuchino</h3>
+                <p>Café con leche espumosa y canela.</p>
+                <strong>$8.000</strong>
+            </div>
+
+            <div class="producto">
+                <h3>Torta de Chocolate</h3>
+                <p>Perfecta para acompañar tu café.</p>
+                <strong>$7.000</strong>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="calculadora">
+        <h2>🧮 Calculadora de compras</h2>
+
+        <div class="tarjeta">
+
+            <label for="precio">Precio del producto</label>
+            <input type="number" id="precio" placeholder="Ej. 10000">
+
+            <label for="descuento">Descuento (%)</label>
+            <input type="number" id="descuento" value="10">
+
+            <label for="iva">IVA (%)</label>
+            <input type="number" id="iva" value="19">
+
+            <label for="envio">Costo de envío</label>
+            <input type="number" id="envio" value="3000">
+
+            <button onclick="procesarCompra()">
+                Calcular Total
+            </button>
+
+        </div>
+
+        <div class="resultado">
+            <h3>Resultado</h3>
+
+            <p>
+                Precio con descuento:
+                <span id="rDescuento">-</span>
+            </p>
+
+            <p>
+                Precio con IVA:
+                <span id="rIVA">-</span>
+            </p>
+
+            <p>
+                Total con envío:
+                <span id="rTotal">-</span>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Cafetería Aroma | Proyecto JavaScript + Node.js</p>
+</footer>
+
+<script src="calculos.js"></script>
+
+</body>
+</html>
